@@ -90,11 +90,21 @@ while (fibonnacci < 1000) {
     let resultadoFibonnacci2 = resultadoFibonnacci.push(fibonnacci)
     console.log(resultadoFibonnacci);
 }
-}*/
+}
 //1.- Del siguiente arreglo de strings retornar otro arreglo con todo a mayúsculas.
+//Intento 1 Nivel solución: Muy flaite, idealmente no evaluar
 let pokeones = ['Pikachu','Charmander','Bulbasaur','Squirtle']
 let poke = pokeones.toString();
-console.log(poke.toUpperCase());
+console.log(poke.toUpperCase());*/
+
+
+//Hice muchos intentos, voy a confesar que la solución de convertir el arreglo en un string y luego pasarlo todo a mayúscula era no solo equivocado, sino que hasta vergonzoso, pero quería tanto enviar la tarea pronto.
+//Bueno, luego la verguenza me ganó y después de darle vueltas y mil intentos llegué a este que creo que es la solución correcta.
+//No me importa que agregar mi solución original reste puntos, pero quería dejar constancia del progreso, para luego sentirme orgullosa de haberlo logrado. 
+let pokeones = ['Pikachu','Charmander','Bulbasaur','Squirtle']
+let pokeMayus = pokeones.map(pokeones => pokeones.toUpperCase(0));
+console.log(pokeMayus);
+/*
 
 //2.- Del siguiente arreglo de objetos, retornar otro arreglo con los pokemones tipo fuego.
 let pokemones = [
@@ -128,4 +138,4 @@ let pokemones = [
     }
 ]
 let fuego = pokemones.filter(pokemones => pokemones.tipo == "Fuego");
-console.log(fuego);
+console.log(fuego);*/
